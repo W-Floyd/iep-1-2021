@@ -1,0 +1,59 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 4500 4500 0    50   Input ~ 0
+VoltageIn
+Text HLabel 5600 4500 2    50   Input ~ 0
+VoltageOut
+$Comp
+L power:GND #PWR0101
+U 1 1 60557082
+P 4500 4700
+AR Path="/60558AA6/60557082" Ref="#PWR0101"  Part="1" 
+AR Path="/6055935A/60557082" Ref="#PWR0103"  Part="1" 
+F 0 "#PWR0101" H 4500 4450 50  0001 C CNN
+F 1 "GND" V 4505 4572 50  0000 R CNN
+F 2 "" H 4500 4700 50  0001 C CNN
+F 3 "" H 4500 4700 50  0001 C CNN
+	1    4500 4700
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 60557488
+P 5600 4700
+AR Path="/60558AA6/60557488" Ref="#PWR0102"  Part="1" 
+AR Path="/6055935A/60557488" Ref="#PWR0104"  Part="1" 
+F 0 "#PWR0102" H 5600 4450 50  0001 C CNN
+F 1 "GND" V 5605 4572 50  0000 R CNN
+F 2 "" H 5600 4700 50  0001 C CNN
+F 3 "" H 5600 4700 50  0001 C CNN
+	1    5600 4700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L IEP:BuckConverter B1
+U 1 1 60556882
+P 5050 4600
+AR Path="/60558AA6/60556882" Ref="B1"  Part="1" 
+AR Path="/6055935A/60556882" Ref="B2"  Part="1" 
+F 0 "B1" H 5050 4925 50  0000 C CNN
+F 1 "BuckConverter" H 5050 4834 50  0000 C CNN
+F 2 "IEP:BuckConverterSmall" H 5050 4600 50  0001 C CNN
+F 3 "" H 5050 4600 50  0001 C CNN
+	1    5050 4600
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
