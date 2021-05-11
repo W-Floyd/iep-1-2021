@@ -260,7 +260,7 @@ Text Notes 6300 2600 0    50   ~ 0
 Output
 Text Notes 4950 1450 0    50   ~ 0
 Boost
-Text Notes 2500 850  0    50   ~ 0
+Text Notes 3450 800  0    50   ~ 0
 Charge/Output\nRemember to Swap
 $Comp
 L Connector:Conn_01x02_Male J8
@@ -299,10 +299,9 @@ F 3 "~" H 4700 2400 50  0001 C CNN
 	1    4700 2400
 	1    0    0    -1  
 $EndComp
-NoConn ~ 3600 1000
 Wire Wire Line
 	3000 1100 3600 1100
-Text Notes 3600 850  0    50   ~ 0
+Text Notes 2700 800  0    50   ~ 0
 On/Off
 Text Notes 4400 1650 0    50   ~ 0
 Voltage On/Off
@@ -415,17 +414,6 @@ Wire Wire Line
 Wire Wire Line
 	4150 2000 4500 2000
 $Comp
-L Switch:SW_DPST SW1
-U 1 1 605DD146
-P 2800 1200
-F 0 "SW1" H 2800 1525 50  0000 C CNN
-F 1 "SW_DPST" H 2800 1434 50  0000 C CNN
-F 2 "Connector_JST:JST_XH_B4B-XH-AM_1x04_P2.50mm_Vertical" H 2800 1200 50  0001 C CNN
-F 3 "~" H 2800 1200 50  0001 C CNN
-	1    2800 1200
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+VDC #PWR0116
 U 1 1 6059013A
 P 2600 1100
@@ -449,4 +437,15 @@ F 3 "" H 2600 1300 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3000 1300 3600 1300
+$Comp
+L Switch:SW_DPST SW1
+U 1 1 605DD146
+P 2800 1200
+F 0 "SW1" H 2800 1525 50  0000 C CNN
+F 1 "SW_DPST" H 2800 1434 50  0000 C CNN
+F 2 "Connector_JST:JST_XH_B4B-XH-AM_1x04_P2.50mm_Vertical" H 2800 1200 50  0001 C CNN
+F 3 "~" H 2800 1200 50  0001 C CNN
+	1    2800 1200
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
