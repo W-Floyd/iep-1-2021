@@ -1,3 +1,0 @@
-(sym_lib_table
-  (lib (name IEP)(type Legacy)(uri ${KIPRJMOD}/../../library/Custom.lib)(options "")(descr ""))
-)

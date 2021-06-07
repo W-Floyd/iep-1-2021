@@ -3,33 +3,40 @@
 #include <Servo.h>
 #include <AccelStepper.h>
 
-#define SERVO_PIN_1 A3
-#define SERVO_PIN_2 A4
+#define SERVO_1_PIN 3
+#define SERVO_2_PIN 5
 
-#define STEPPER_PIN_SLP A2
-#define STEPPER_PIN_DIR A0
-#define STEPPER_PIN_STEP A1
-#define ENDSTOP_PIN A5
+#define ENDSTOP_PIN 6
+
+#define STEPPER_1_PIN_DIR 2
+#define STEPPER_1_PIN_STEP 4
+
+#define STEPPER_2_PIN_DIR 7
+#define STEPPER_2_PIN_STEP 8
+
+#define STEPPER_3_PIN_DIR A7
+#define STEPPER_3_PIN_STEP A6
 
 #define STEPPER_SPEED 50000
+#define STEPPER_ACCEL 50000
 
-const uint8_t switchPinMap[4] = {2, 3, 4, 5};
+const uint8_t switchPinMap[4] = {A0, A1, A2, A3};
 const long positionMap[4] = {5300, 6900, 8500, 10100};
 
 Servo servo1;
 Servo servo2;
 
-AccelStepper stepper(1, STEPPER_PIN_STEP, STEPPER_PIN_DIR);
+AccelStepper stepper_1(1, STEPPER_1_PIN_STEP, STEPPER_1_PIN_DIR);
 
 void home()
 {
-  stepper.setSpeed(-STEPPER_SPEED);
+  stepper_1.setSpeed(-STEPPER_SPEED);
   while (digitalRead(ENDSTOP_PIN) == HIGH)
   {
-    stepper.runSpeed();
+    stepper_1.runSpeed();
   }
-  stepper.setSpeed(0);
-  stepper.setCurrentPosition(0);
+  stepper_1.setSpeed(0);
+  stepper_1.setCurrentPosition(0);
   Serial.println("Homed!");
 }
 
@@ -42,9 +49,9 @@ void armUp()
 
 void flipSwitch(int distance)
 {
-  stepper.runToNewPosition(distance);
+  stepper_1.runToNewPosition(distance);
   servo1.write(75);
-  servo2.write(45);
+  servo2.write(65);
   delay(200);
   armUp();
 }
@@ -54,20 +61,17 @@ void setup()
 
   Serial.begin(115200);
 
-  servo1.attach(SERVO_PIN_1);
-  servo2.attach(SERVO_PIN_2);
+  servo1.attach(SERVO_1_PIN);
+  servo2.attach(SERVO_2_PIN);
 
-  stepper.setMaxSpeed(10000);
-  stepper.setAcceleration(10000);
+  stepper_1.setMaxSpeed(STEPPER_SPEED);
+  stepper_1.setAcceleration(STEPPER_ACCEL);
 
   pinMode(ENDSTOP_PIN, INPUT);
-  pinMode(STEPPER_PIN_SLP, OUTPUT);
   pinMode(switchPinMap[0], INPUT_PULLUP);
   pinMode(switchPinMap[1], INPUT_PULLUP);
   pinMode(switchPinMap[2], INPUT_PULLUP);
   pinMode(switchPinMap[3], INPUT_PULLUP);
-
-  digitalWrite(STEPPER_PIN_SLP, HIGH);
 
   armUp();
 
@@ -79,7 +83,7 @@ void loop()
 
   for (size_t i = 0; i < 4; i++)
   {
-    if (digitalRead(switchPinMap[i]) == HIGH)
+    while (digitalRead(switchPinMap[i]) == HIGH)
     {
       flipSwitch(positionMap[i]);
     }

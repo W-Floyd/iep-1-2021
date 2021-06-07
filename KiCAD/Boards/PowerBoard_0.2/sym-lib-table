@@ -1,4 +1,0 @@
-(sym_lib_table
-  (lib (name power_boards)(type Legacy)(uri ${KIPRJMOD}/library/power_boards.lib)(options "")(descr "")(disabled))
-  (lib (name Custom)(type Legacy)(uri ${KIPRJMOD}/library/Custom.lib)(options "")(descr ""))
-)
