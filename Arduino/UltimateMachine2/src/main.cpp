@@ -20,8 +20,11 @@
 #define STEPPER_SPEED 50000
 #define STEPPER_ACCEL 50000
 
+#define SPACING_START 1350
+#define SPACING_WIDTH 1540
+
 const uint8_t switchPinMap[4] = {A0, A1, A2, A3};
-const long positionMap[4] = {5300, 6900, 8500, 10100};
+const long positionMap[4] = {SPACING_START, SPACING_START + SPACING_WIDTH * 1, SPACING_START + SPACING_WIDTH * 2, SPACING_START + SPACING_WIDTH * 3};
 
 Servo servo1;
 Servo servo2;
@@ -42,17 +45,26 @@ void home()
 
 void armUp()
 {
-  servo1.write(30);
-  servo2.write(45);
+  servo1.write(70);
+  servo2.write(150);
   delay(100);
 } // raise arm to home position
 
-void flipSwitch(int distance)
+void flipSwitch(int distance, int switchNum)
 {
   stepper_1.runToNewPosition(distance);
-  servo1.write(75);
-  servo2.write(65);
+  servo1.write(130);
+  servo2.write(130);
   delay(200);
+  // while (digitalRead(switchPinMap[switchNum]) == HIGH)
+  // {
+  //   if (servo1.read() == 180)
+  //   {
+  //     break;
+  //   }
+  //   servo1.write(servo1.read() + 1);
+  //   delay(3);
+  // }
   armUp();
 }
 
@@ -85,7 +97,7 @@ void loop()
   {
     while (digitalRead(switchPinMap[i]) == HIGH)
     {
-      flipSwitch(positionMap[i]);
+      flipSwitch(positionMap[i], i);
     }
   }
 }
