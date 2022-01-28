@@ -1,0 +1,951 @@
+name: Multiboard  # Put the name of diagram here
+description: Example diagram # Put a short description of the diagram here
+components:
+    A1:
+        description: Arduino_Nano_v3.x  # Arbitrary comment
+        groups: [] # Specify component groups
+        pins:
+            '16':  # Connected to Net-(A1-Pad16)
+                name: A1.16
+                description: ''
+                groups: []
+            '15': # Connected to Net-(A1-Pad15)
+                name: A1.15
+                description: ''
+                groups: []
+            '30': # Connected to Net-(A1-Pad30)
+                name: A1.30
+                description: ''
+                groups: []
+            '14': # Connected to Net-(A1-Pad14)
+                name: A1.14
+                description: ''
+                groups: []
+            '29': # Connected to GND
+                name: A1.29
+                description: ''
+                groups: []
+            '13': # Connected to Net-(A1-Pad13)
+                name: A1.13
+                description: ''
+                groups: []
+            '28': # Connected to Net-(A1-Pad28)
+                name: A1.28
+                description: ''
+                groups: []
+            '12': # Connected to Net-(A1-Pad12)
+                name: A1.12
+                description: ''
+                groups: []
+            '27': # Connected to +5V
+                name: A1.27
+                description: ''
+                groups: []
+            '11': # Connected to /sheet610CB91D/STEP
+                name: A1.11
+                description: ''
+                groups: []
+            '26': # Connected to /sheet60A7C39C/DIR
+                name: A1.26
+                description: ''
+                groups: []
+            '10': # Connected to /sheet610CB91D/DIR
+                name: A1.10
+                description: ''
+                groups: []
+            '25': # Connected to /sheet60A7C39C/STEP
+                name: A1.25
+                description: ''
+                groups: []
+            '9': # Connected to Net-(A1-Pad9)
+                name: A1.9
+                description: ''
+                groups: []
+            '24': # Connected to Net-(A1-Pad24)
+                name: A1.24
+                description: ''
+                groups: []
+            '8': # Connected to Net-(A1-Pad8)
+                name: A1.8
+                description: ''
+                groups: []
+            '23': # Connected to Net-(A1-Pad23)
+                name: A1.23
+                description: ''
+                groups: []
+            '7': # Connected to /Stepper/STEP
+                name: A1.7
+                description: ''
+                groups: []
+            '22': # Connected to Net-(A1-Pad22)
+                name: A1.22
+                description: ''
+                groups: []
+            '6': # Connected to Net-(A1-Pad6)
+                name: A1.6
+                description: ''
+                groups: []
+            '21': # Connected to Net-(A1-Pad21)
+                name: A1.21
+                description: ''
+                groups: []
+            '5': # Connected to /Stepper/DIR
+                name: A1.5
+                description: ''
+                groups: []
+            '20': # Connected to Net-(A1-Pad20)
+                name: A1.20
+                description: ''
+                groups: []
+            '4': # Connected to GND
+                name: A1.4
+                description: ''
+                groups: []
+            '19': # Connected to Net-(A1-Pad19)
+                name: A1.19
+                description: ''
+                groups: []
+            '3': # Connected to Net-(A1-Pad3)
+                name: A1.3
+                description: ''
+                groups: []
+            '18': # Connected to Net-(A1-Pad18)
+                name: A1.18
+                description: ''
+                groups: []
+            '2': # Connected to Net-(A1-Pad2)
+                name: A1.2
+                description: ''
+                groups: []
+            '17': # Connected to Net-(A1-Pad17)
+                name: A1.17
+                description: ''
+                groups: []
+            '1': # Connected to Net-(A1-Pad1)
+                name: A1.1
+                description: ''
+                groups: []
+        highlight: false # Make the component active
+    A2:
+        description: Pololu_Breakout_A4988  # Arbitrary comment
+        groups: [] # Specify component groups
+        pins:
+            '1':  # Connected to GND
+                name: A2.1
+                description: ''
+                groups: []
+            '9': # Connected to Net-(A2-Pad9)
+                name: A2.9
+                description: ''
+                groups: []
+            '2': # Connected to +5V
+                name: A2.2
+                description: ''
+                groups: []
+            '10': # Connected to +5V
+                name: A2.10
+                description: ''
+                groups: []
+            '3': # Connected to Net-(A2-Pad3)
+                name: A2.3
+                description: ''
+                groups: []
+            '11': # Connected to +5V
+                name: A2.11
+                description: ''
+                groups: []
+            '4': # Connected to Net-(A2-Pad4)
+                name: A2.4
+                description: ''
+                groups: []
+            '12': # Connected to +5V
+                name: A2.12
+                description: ''
+                groups: []
+            '5': # Connected to Net-(A2-Pad5)
+                name: A2.5
+                description: ''
+                groups: []
+            '13': # Connected to Net-(A2-Pad13)
+                name: A2.13
+                description: ''
+                groups: []
+            '6': # Connected to Net-(A2-Pad6)
+                name: A2.6
+                description: ''
+                groups: []
+            '14': # Connected to Net-(A2-Pad14)
+                name: A2.14
+                description: ''
+                groups: []
+            '7': # Connected to GND
+                name: A2.7
+                description: ''
+                groups: []
+            '15': # Connected to /Stepper/STEP
+                name: A2.15
+                description: ''
+                groups: []
+            '8': # Connected to +12V
+                name: A2.8
+                description: ''
+                groups: []
+            '16': # Connected to /Stepper/DIR
+                name: A2.16
+                description: ''
+                groups: []
+        highlight: false # Make the component active
+    A3:
+        description: Pololu_Breakout_A4988  # Arbitrary comment
+        groups: [] # Specify component groups
+        pins:
+            '16':  # Connected to /sheet610CB91D/DIR
+                name: A3.16
+                description: ''
+                groups: []
+            '8': # Connected to +12V
+                name: A3.8
+                description: ''
+                groups: []
+            '15': # Connected to /sheet610CB91D/STEP
+                name: A3.15
+                description: ''
+                groups: []
+            '7': # Connected to GND
+                name: A3.7
+                description: ''
+                groups: []
+            '14': # Connected to Net-(A3-Pad14)
+                name: A3.14
+                description: ''
+                groups: []
+            '6': # Connected to Net-(A3-Pad6)
+                name: A3.6
+                description: ''
+                groups: []
+            '13': # Connected to Net-(A3-Pad13)
+                name: A3.13
+                description: ''
+                groups: []
+            '5': # Connected to Net-(A3-Pad5)
+                name: A3.5
+                description: ''
+                groups: []
+            '12': # Connected to +5V
+                name: A3.12
+                description: ''
+                groups: []
+            '4': # Connected to Net-(A3-Pad4)
+                name: A3.4
+                description: ''
+                groups: []
+            '11': # Connected to +5V
+                name: A3.11
+                description: ''
+                groups: []
+            '3': # Connected to Net-(A3-Pad3)
+                name: A3.3
+                description: ''
+                groups: []
+            '10': # Connected to +5V
+                name: A3.10
+                description: ''
+                groups: []
+            '2': # Connected to +5V
+                name: A3.2
+                description: ''
+                groups: []
+            '9': # Connected to Net-(A3-Pad9)
+                name: A3.9
+                description: ''
+                groups: []
+            '1': # Connected to GND
+                name: A3.1
+                description: ''
+                groups: []
+        highlight: false # Make the component active
+    A4:
+        description: Pololu_Breakout_A4988  # Arbitrary comment
+        groups: [] # Specify component groups
+        pins:
+            '16':  # Connected to /sheet60A7C39C/DIR
+                name: A4.16
+                description: ''
+                groups: []
+            '8': # Connected to +12V
+                name: A4.8
+                description: ''
+                groups: []
+            '15': # Connected to /sheet60A7C39C/STEP
+                name: A4.15
+                description: ''
+                groups: []
+            '7': # Connected to GND
+                name: A4.7
+                description: ''
+                groups: []
+            '14': # Connected to Net-(A4-Pad14)
+                name: A4.14
+                description: ''
+                groups: []
+            '6': # Connected to Net-(A4-Pad6)
+                name: A4.6
+                description: ''
+                groups: []
+            '13': # Connected to Net-(A4-Pad13)
+                name: A4.13
+                description: ''
+                groups: []
+            '5': # Connected to Net-(A4-Pad5)
+                name: A4.5
+                description: ''
+                groups: []
+            '12': # Connected to +5V
+                name: A4.12
+                description: ''
+                groups: []
+            '4': # Connected to Net-(A4-Pad4)
+                name: A4.4
+                description: ''
+                groups: []
+            '11': # Connected to +5V
+                name: A4.11
+                description: ''
+                groups: []
+            '3': # Connected to Net-(A4-Pad3)
+                name: A4.3
+                description: ''
+                groups: []
+            '10': # Connected to +5V
+                name: A4.10
+                description: ''
+                groups: []
+            '2': # Connected to +5V
+                name: A4.2
+                description: ''
+                groups: []
+            '9': # Connected to Net-(A4-Pad9)
+                name: A4.9
+                description: ''
+                groups: []
+            '1': # Connected to GND
+                name: A4.1
+                description: ''
+                groups: []
+        highlight: false # Make the component active
+    C1:
+        description: 100uF  # Arbitrary comment
+        groups: [] # Specify component groups
+        pins:
+            '1':  # Connected to +12V
+                name: C1.1
+                description: ''
+                groups: []
+            '2': # Connected to GND
+                name: C1.2
+                description: ''
+                groups: []
+        highlight: false # Make the component active
+    C2:
+        description: 100uF  # Arbitrary comment
+        groups: [] # Specify component groups
+        pins:
+            '2':  # Connected to GND
+                name: C2.2
+                description: ''
+                groups: []
+            '1': # Connected to +12V
+                name: C2.1
+                description: ''
+                groups: []
+        highlight: false # Make the component active
+    C3:
+        description: 100uF  # Arbitrary comment
+        groups: [] # Specify component groups
+        pins:
+            '2':  # Connected to GND
+                name: C3.2
+                description: ''
+                groups: []
+            '1': # Connected to +12V
+                name: C3.1
+                description: ''
+                groups: []
+        highlight: false # Make the component active
+    H1:
+        description: MountingHole  # Arbitrary comment
+        groups: [] # Specify component groups
+        pins:
+            '1':  # Connected to 
+                name: H1.1
+                description: ''
+                groups: []
+        highlight: false # Make the component active
+    H2:
+        description: MountingHole  # Arbitrary comment
+        groups: [] # Specify component groups
+        pins:
+            '1':  # Connected to 
+                name: H2.1
+                description: ''
+                groups: []
+        highlight: false # Make the component active
+    H3:
+        description: MountingHole  # Arbitrary comment
+        groups: [] # Specify component groups
+        pins:
+            '1':  # Connected to 
+                name: H3.1
+                description: ''
+                groups: []
+        highlight: false # Make the component active
+    H4:
+        description: MountingHole  # Arbitrary comment
+        groups: [] # Specify component groups
+        pins:
+            '1':  # Connected to 
+                name: H4.1
+                description: ''
+                groups: []
+        highlight: false # Make the component active
+    J1:
+        description: Conn_01x15  # Arbitrary comment
+        groups: [] # Specify component groups
+        pins:
+            '15':  # Connected to Net-(A1-Pad15)
+                name: J1.15
+                description: ''
+                groups: []
+            '14': # Connected to Net-(A1-Pad14)
+                name: J1.14
+                description: ''
+                groups: []
+            '13': # Connected to Net-(A1-Pad13)
+                name: J1.13
+                description: ''
+                groups: []
+            '12': # Connected to Net-(A1-Pad12)
+                name: J1.12
+                description: ''
+                groups: []
+            '11': # Connected to /sheet610CB91D/STEP
+                name: J1.11
+                description: ''
+                groups: []
+            '10': # Connected to /sheet610CB91D/DIR
+                name: J1.10
+                description: ''
+                groups: []
+            '9': # Connected to Net-(A1-Pad9)
+                name: J1.9
+                description: ''
+                groups: []
+            '8': # Connected to Net-(A1-Pad8)
+                name: J1.8
+                description: ''
+                groups: []
+            '7': # Connected to /Stepper/STEP
+                name: J1.7
+                description: ''
+                groups: []
+            '6': # Connected to Net-(A1-Pad6)
+                name: J1.6
+                description: ''
+                groups: []
+            '5': # Connected to /Stepper/DIR
+                name: J1.5
+                description: ''
+                groups: []
+            '4': # Connected to GND
+                name: J1.4
+                description: ''
+                groups: []
+            '3': # Connected to Net-(A1-Pad3)
+                name: J1.3
+                description: ''
+                groups: []
+            '2': # Connected to Net-(A1-Pad2)
+                name: J1.2
+                description: ''
+                groups: []
+            '1': # Connected to Net-(A1-Pad1)
+                name: J1.1
+                description: ''
+                groups: []
+        highlight: false # Make the component active
+    J11:
+        description: Conn_01x03  # Arbitrary comment
+        groups: [] # Specify component groups
+        pins:
+            '3':  # Connected to Net-(A3-Pad9)
+                name: J11.3
+                description: ''
+                groups: []
+            '2': # Connected to Net-(A3-Pad13)
+                name: J11.2
+                description: ''
+                groups: []
+            '1': # Connected to Net-(A3-Pad14)
+                name: J11.1
+                description: ''
+                groups: []
+        highlight: false # Make the component active
+    J12:
+        description: Conn_01x04  # Arbitrary comment
+        groups: [] # Specify component groups
+        pins:
+            '4':  # Connected to Net-(A3-Pad3)
+                name: J12.4
+                description: ''
+                groups: []
+            '3': # Connected to Net-(A3-Pad4)
+                name: J12.3
+                description: ''
+                groups: []
+            '2': # Connected to Net-(A3-Pad5)
+                name: J12.2
+                description: ''
+                groups: []
+            '1': # Connected to Net-(A3-Pad6)
+                name: J12.1
+                description: ''
+                groups: []
+        highlight: false # Make the component active
+    J14:
+        description: Conn_01x03  # Arbitrary comment
+        groups: [] # Specify component groups
+        pins:
+            '3':  # Connected to Net-(A4-Pad9)
+                name: J14.3
+                description: ''
+                groups: []
+            '2': # Connected to Net-(A4-Pad13)
+                name: J14.2
+                description: ''
+                groups: []
+            '1': # Connected to Net-(A4-Pad14)
+                name: J14.1
+                description: ''
+                groups: []
+        highlight: false # Make the component active
+    J15:
+        description: Conn_01x04  # Arbitrary comment
+        groups: [] # Specify component groups
+        pins:
+            '4':  # Connected to Net-(A4-Pad3)
+                name: J15.4
+                description: ''
+                groups: []
+            '3': # Connected to Net-(A4-Pad4)
+                name: J15.3
+                description: ''
+                groups: []
+            '2': # Connected to Net-(A4-Pad5)
+                name: J15.2
+                description: ''
+                groups: []
+            '1': # Connected to Net-(A4-Pad6)
+                name: J15.1
+                description: ''
+                groups: []
+        highlight: false # Make the component active
+    J2:
+        description: Conn_01x15  # Arbitrary comment
+        groups: [] # Specify component groups
+        pins:
+            '15':  # Connected to Net-(A1-Pad15)
+                name: J2.15
+                description: ''
+                groups: []
+            '14': # Connected to Net-(A1-Pad14)
+                name: J2.14
+                description: ''
+                groups: []
+            '13': # Connected to Net-(A1-Pad13)
+                name: J2.13
+                description: ''
+                groups: []
+            '12': # Connected to Net-(A1-Pad12)
+                name: J2.12
+                description: ''
+                groups: []
+            '11': # Connected to /sheet610CB91D/STEP
+                name: J2.11
+                description: ''
+                groups: []
+            '10': # Connected to /sheet610CB91D/DIR
+                name: J2.10
+                description: ''
+                groups: []
+            '9': # Connected to Net-(A1-Pad9)
+                name: J2.9
+                description: ''
+                groups: []
+            '8': # Connected to Net-(A1-Pad8)
+                name: J2.8
+                description: ''
+                groups: []
+            '7': # Connected to /Stepper/STEP
+                name: J2.7
+                description: ''
+                groups: []
+            '6': # Connected to Net-(A1-Pad6)
+                name: J2.6
+                description: ''
+                groups: []
+            '5': # Connected to /Stepper/DIR
+                name: J2.5
+                description: ''
+                groups: []
+            '4': # Connected to GND
+                name: J2.4
+                description: ''
+                groups: []
+            '3': # Connected to Net-(A1-Pad3)
+                name: J2.3
+                description: ''
+                groups: []
+            '2': # Connected to Net-(A1-Pad2)
+                name: J2.2
+                description: ''
+                groups: []
+            '1': # Connected to Net-(A1-Pad1)
+                name: J2.1
+                description: ''
+                groups: []
+        highlight: false # Make the component active
+    J3:
+        description: Conn_01x15  # Arbitrary comment
+        groups: [] # Specify component groups
+        pins:
+            '15':  # Connected to Net-(A1-Pad30)
+                name: J3.15
+                description: ''
+                groups: []
+            '14': # Connected to GND
+                name: J3.14
+                description: ''
+                groups: []
+            '13': # Connected to Net-(A1-Pad28)
+                name: J3.13
+                description: ''
+                groups: []
+            '12': # Connected to +5V
+                name: J3.12
+                description: ''
+                groups: []
+            '11': # Connected to /sheet60A7C39C/DIR
+                name: J3.11
+                description: ''
+                groups: []
+            '10': # Connected to /sheet60A7C39C/STEP
+                name: J3.10
+                description: ''
+                groups: []
+            '9': # Connected to Net-(A1-Pad24)
+                name: J3.9
+                description: ''
+                groups: []
+            '8': # Connected to Net-(A1-Pad23)
+                name: J3.8
+                description: ''
+                groups: []
+            '7': # Connected to Net-(A1-Pad22)
+                name: J3.7
+                description: ''
+                groups: []
+            '6': # Connected to Net-(A1-Pad21)
+                name: J3.6
+                description: ''
+                groups: []
+            '5': # Connected to Net-(A1-Pad20)
+                name: J3.5
+                description: ''
+                groups: []
+            '4': # Connected to Net-(A1-Pad19)
+                name: J3.4
+                description: ''
+                groups: []
+            '3': # Connected to Net-(A1-Pad18)
+                name: J3.3
+                description: ''
+                groups: []
+            '2': # Connected to Net-(A1-Pad17)
+                name: J3.2
+                description: ''
+                groups: []
+            '1': # Connected to Net-(A1-Pad16)
+                name: J3.1
+                description: ''
+                groups: []
+        highlight: false # Make the component active
+    J4:
+        description: Conn_01x15  # Arbitrary comment
+        groups: [] # Specify component groups
+        pins:
+            '15':  # Connected to Net-(A1-Pad30)
+                name: J4.15
+                description: ''
+                groups: []
+            '14': # Connected to GND
+                name: J4.14
+                description: ''
+                groups: []
+            '13': # Connected to Net-(A1-Pad28)
+                name: J4.13
+                description: ''
+                groups: []
+            '12': # Connected to +5V
+                name: J4.12
+                description: ''
+                groups: []
+            '11': # Connected to /sheet60A7C39C/DIR
+                name: J4.11
+                description: ''
+                groups: []
+            '10': # Connected to /sheet60A7C39C/STEP
+                name: J4.10
+                description: ''
+                groups: []
+            '9': # Connected to Net-(A1-Pad24)
+                name: J4.9
+                description: ''
+                groups: []
+            '8': # Connected to Net-(A1-Pad23)
+                name: J4.8
+                description: ''
+                groups: []
+            '7': # Connected to Net-(A1-Pad22)
+                name: J4.7
+                description: ''
+                groups: []
+            '6': # Connected to Net-(A1-Pad21)
+                name: J4.6
+                description: ''
+                groups: []
+            '5': # Connected to Net-(A1-Pad20)
+                name: J4.5
+                description: ''
+                groups: []
+            '4': # Connected to Net-(A1-Pad19)
+                name: J4.4
+                description: ''
+                groups: []
+            '3': # Connected to Net-(A1-Pad18)
+                name: J4.3
+                description: ''
+                groups: []
+            '2': # Connected to Net-(A1-Pad17)
+                name: J4.2
+                description: ''
+                groups: []
+            '1': # Connected to Net-(A1-Pad16)
+                name: J4.1
+                description: ''
+                groups: []
+        highlight: false # Make the component active
+    J5:
+        description: Screw_Terminal_01x02  # Arbitrary comment
+        groups: [] # Specify component groups
+        pins:
+            '1':  # Connected to +5V
+                name: J5.1
+                description: ''
+                groups: []
+            '2': # Connected to GND
+                name: J5.2
+                description: ''
+                groups: []
+        highlight: false # Make the component active
+    J6:
+        description: Screw_Terminal_01x02  # Arbitrary comment
+        groups: [] # Specify component groups
+        pins:
+            '1':  # Connected to +12V
+                name: J6.1
+                description: ''
+                groups: []
+            '2': # Connected to GND
+                name: J6.2
+                description: ''
+                groups: []
+        highlight: false # Make the component active
+    J8:
+        description: Conn_01x03  # Arbitrary comment
+        groups: [] # Specify component groups
+        pins:
+            '1':  # Connected to Net-(A2-Pad14)
+                name: J8.1
+                description: ''
+                groups: []
+            '2': # Connected to Net-(A2-Pad13)
+                name: J8.2
+                description: ''
+                groups: []
+            '3': # Connected to Net-(A2-Pad9)
+                name: J8.3
+                description: ''
+                groups: []
+        highlight: false # Make the component active
+    J9:
+        description: Conn_01x04  # Arbitrary comment
+        groups: [] # Specify component groups
+        pins:
+            '1':  # Connected to Net-(A2-Pad6)
+                name: J9.1
+                description: ''
+                groups: []
+            '2': # Connected to Net-(A2-Pad5)
+                name: J9.2
+                description: ''
+                groups: []
+            '3': # Connected to Net-(A2-Pad4)
+                name: J9.3
+                description: ''
+                groups: []
+            '4': # Connected to Net-(A2-Pad3)
+                name: J9.4
+                description: ''
+                groups: []
+        highlight: false # Make the component active
+    M1:
+        description: Motor_Servo  # Arbitrary comment
+        groups: [] # Specify component groups
+        pins:
+            '1':  # Connected to Net-(A1-Pad6)
+                name: M1.1
+                description: ''
+                groups: []
+            '2': # Connected to +5V
+                name: M1.2
+                description: ''
+                groups: []
+            '3': # Connected to GND
+                name: M1.3
+                description: ''
+                groups: []
+        highlight: false # Make the component active
+    M2:
+        description: Motor_Servo  # Arbitrary comment
+        groups: [] # Specify component groups
+        pins:
+            '1':  # Connected to Net-(A1-Pad8)
+                name: M2.1
+                description: ''
+                groups: []
+            '2': # Connected to +5V
+                name: M2.2
+                description: ''
+                groups: []
+            '3': # Connected to GND
+                name: M2.3
+                description: ''
+                groups: []
+        highlight: false # Make the component active
+    M3:
+        description: Motor_Servo  # Arbitrary comment
+        groups: [] # Specify component groups
+        pins:
+            '1':  # Connected to Net-(A1-Pad9)
+                name: M3.1
+                description: ''
+                groups: []
+            '2': # Connected to +5V
+                name: M3.2
+                description: ''
+                groups: []
+            '3': # Connected to GND
+                name: M3.3
+                description: ''
+                groups: []
+        highlight: false # Make the component active
+    M4:
+        description: Motor_Servo  # Arbitrary comment
+        groups: [] # Specify component groups
+        pins:
+            '1':  # Connected to Net-(A1-Pad12)
+                name: M4.1
+                description: ''
+                groups: []
+            '2': # Connected to +5V
+                name: M4.2
+                description: ''
+                groups: []
+            '3': # Connected to GND
+                name: M4.3
+                description: ''
+                groups: []
+        highlight: false # Make the component active
+    M5:
+        description: Motor_Servo  # Arbitrary comment
+        groups: [] # Specify component groups
+        pins:
+            '1':  # Connected to Net-(A1-Pad13)
+                name: M5.1
+                description: ''
+                groups: []
+            '2': # Connected to +5V
+                name: M5.2
+                description: ''
+                groups: []
+            '3': # Connected to GND
+                name: M5.3
+                description: ''
+                groups: []
+        highlight: false # Make the component active
+    M6:
+        description: Motor_Servo  # Arbitrary comment
+        groups: [] # Specify component groups
+        pins:
+            '1':  # Connected to Net-(A1-Pad14)
+                name: M6.1
+                description: ''
+                groups: []
+            '2': # Connected to +5V
+                name: M6.2
+                description: ''
+                groups: []
+            '3': # Connected to GND
+                name: M6.3
+                description: ''
+                groups: []
+        highlight: false # Make the component active
+    R12:
+        description: 10K  # Arbitrary comment
+        groups: [] # Specify component groups
+        pins:
+            '2':  # Connected to +5V
+                name: R12.2
+                description: ''
+                groups: []
+            '1': # Connected to Net-(A4-Pad13)
+                name: R12.1
+                description: ''
+                groups: []
+        highlight: false # Make the component active
+    R4:
+        description: 10K  # Arbitrary comment
+        groups: [] # Specify component groups
+        pins:
+            '1':  # Connected to Net-(A2-Pad13)
+                name: R4.1
+                description: ''
+                groups: []
+            '2': # Connected to +5V
+                name: R4.2
+                description: ''
+                groups: []
+        highlight: false # Make the component active
+    R8:
+        description: 10K  # Arbitrary comment
+        groups: [] # Specify component groups
+        pins:
+            '2':  # Connected to +5V
+                name: R8.2
+                description: ''
+                groups: []
+            '1': # Connected to Net-(A3-Pad13)
+                name: R8.1
+                description: ''
+                groups: []
+        highlight: false # Make the component active

@@ -20,8 +20,9 @@
 #define STEPPER_SPEED 50000
 #define STEPPER_ACCEL 50000
 
-#define SPACING_START 1350
-#define SPACING_WIDTH 1540
+// CHANGE ME TO FIT MACHINE
+#define SPACING_START 1350 // Distance to first switch
+#define SPACING_WIDTH 1540 // Distance between switches
 
 const uint8_t switchPinMap[4] = {A0, A1, A2, A3};
 const long positionMap[4] = {SPACING_START, SPACING_START + SPACING_WIDTH * 1, SPACING_START + SPACING_WIDTH * 2, SPACING_START + SPACING_WIDTH * 3};
@@ -45,7 +46,8 @@ void home()
 
 void armUp()
 {
-  servo1.write(70);
+  // CHANGE ME TO FIT MACHINE
+  servo1.write(30);
   servo2.write(150);
   delay(100);
 } // raise arm to home position
@@ -53,18 +55,10 @@ void armUp()
 void flipSwitch(int distance, int switchNum)
 {
   stepper_1.runToNewPosition(distance);
-  servo1.write(130);
+  // CHANGE ME TO FIT MACHINE
+  servo1.write(100);
   servo2.write(130);
   delay(200);
-  // while (digitalRead(switchPinMap[switchNum]) == HIGH)
-  // {
-  //   if (servo1.read() == 180)
-  //   {
-  //     break;
-  //   }
-  //   servo1.write(servo1.read() + 1);
-  //   delay(3);
-  // }
   armUp();
 }
 
@@ -95,7 +89,8 @@ void loop()
 
   for (size_t i = 0; i < 4; i++)
   {
-    while (digitalRead(switchPinMap[i]) == HIGH)
+    // CHANGEME if switches are soldered upside down
+    while (digitalRead(switchPinMap[i]) == LOW)
     {
       flipSwitch(positionMap[i], i);
     }

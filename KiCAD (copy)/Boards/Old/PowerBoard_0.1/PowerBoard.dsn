@@ -1,0 +1,232 @@
+(pcb "/home/william/Documents/git/original/iep-1-2021/KiCAD/Boards/PowerBoard/PowerBoard.dsn"
+  (parser
+    (string_quote ")
+    (space_in_quoted_tokens on)
+    (host_cad "KiCad's Pcbnew")
+    (host_version "5.1.6")
+  )
+  (resolution um 10)
+  (unit um)
+  (structure
+    (layer F.Cu
+      (type signal)
+      (property
+        (index 0)
+      )
+    )
+    (layer B.Cu
+      (type signal)
+      (property
+        (index 1)
+      )
+    )
+    (boundary
+      (path pcb 0  165000 -140000  95000 -140000  95000 -85000  165000 -85000
+            165000 -140000)
+    )
+    (plane GND (polygon F.Cu 0  165000 -140000  95000 -140000  95000 -85000  165000 -85000
+            165000 -140000))
+    (plane GND (polygon B.Cu 0  165000 -140000  95000 -140000  95000 -85000  165000 -85000
+            165000 -140000))
+    (via "Via[0-1]_800:400_um")
+    (rule
+      (width 250)
+      (clearance 200.1)
+      (clearance 200.1 (type default_smd))
+      (clearance 50 (type smd_smd))
+    )
+  )
+  (placement
+    (component Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical
+      (place J5 150000 -109590 front 90 (PN Conn_01x05_Male))
+      (place J4 150000 -114240 front 90 (PN Conn_01x05_Male))
+      (place J3 150000 -125350 front 90 (PN Conn_01x05_Male))
+      (place J2 150000 -130000 front 90 (PN Conn_01x05_Male))
+    )
+    (component "Connector_BarrelJack:BarrelJack_CUI_PJ-102AH_Horizontal"
+      (place J1 150000 -95000 front 90 (PN Conn_01x02_Female))
+    )
+    (component IEP:BuckConverterSmall
+      (place B2 120000 -124280 front 0 (PN BuckConverter))
+      (place B1 120000 -100000 front 0 (PN BuckConverter))
+    )
+  )
+  (library
+    (image Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical
+      (outline (path signal 100  -635 1270  1270 1270))
+      (outline (path signal 100  1270 1270  1270 -11430))
+      (outline (path signal 100  1270 -11430  -1270 -11430))
+      (outline (path signal 100  -1270 -11430  -1270 635))
+      (outline (path signal 100  -1270 635  -635 1270))
+      (outline (path signal 120  -1330 -11490  1330 -11490))
+      (outline (path signal 120  -1330 -1270  -1330 -11490))
+      (outline (path signal 120  1330 -1270  1330 -11490))
+      (outline (path signal 120  -1330 -1270  1330 -1270))
+      (outline (path signal 120  -1330 0  -1330 1330))
+      (outline (path signal 120  -1330 1330  0 1330))
+      (outline (path signal 50  -1800 1800  -1800 -11950))
+      (outline (path signal 50  -1800 -11950  1800 -11950))
+      (outline (path signal 50  1800 -11950  1800 1800))
+      (outline (path signal 50  1800 1800  -1800 1800))
+      (pin Oval[A]Pad_1700x1700_um 5 0 -10160)
+      (pin Oval[A]Pad_1700x1700_um 4 0 -7620)
+      (pin Oval[A]Pad_1700x1700_um 3 0 -5080)
+      (pin Oval[A]Pad_1700x1700_um 2 0 -2540)
+      (pin Rect[A]Pad_1700x1700_um 1 0 0)
+    )
+    (image "Connector_BarrelJack:BarrelJack_CUI_PJ-102AH_Horizontal"
+      (outline (path signal 50  1800 1800  1800 1200))
+      (outline (path signal 50  1800 1200  5000 1200))
+      (outline (path signal 50  5000 1200  5000 -1200))
+      (outline (path signal 50  5000 -1200  6500 -1200))
+      (outline (path signal 50  6500 -1200  6500 -4800))
+      (outline (path signal 50  6500 -4800  5000 -4800))
+      (outline (path signal 50  5000 -4800  5000 -14200))
+      (outline (path signal 50  5000 -14200  -5000 -14200))
+      (outline (path signal 50  -5000 -14200  -5000 1200))
+      (outline (path signal 50  -5000 1200  -1800 1200))
+      (outline (path signal 50  -1800 1200  -1800 1800))
+      (outline (path signal 50  -1800 1800  1800 1800))
+      (outline (path signal 120  4600 -4800  4600 -13800))
+      (outline (path signal 120  4600 -13800  -4600 -13800))
+      (outline (path signal 120  -4600 -13800  -4600 800))
+      (outline (path signal 120  -4600 800  -1800 800))
+      (outline (path signal 120  1800 800  4600 800))
+      (outline (path signal 120  4600 800  4600 -1200))
+      (outline (path signal 120  -4840 -700  -4840 1040))
+      (outline (path signal 120  -4840 1040  -3100 1040))
+      (outline (path signal 100  4500 700  4500 -13700))
+      (outline (path signal 100  4500 -13700  -4500 -13700))
+      (outline (path signal 100  -4500 -13700  -4500 -300))
+      (outline (path signal 100  -4500 -300  -3500 700))
+      (outline (path signal 100  -3500 700  4500 700))
+      (outline (path signal 100  -4500 -10200  4500 -10200))
+      (pin Round[A]Pad_2600_um 3 4700 -3000)
+      (pin Round[A]Pad_2600_um 2 0 -6000)
+      (pin Rect[A]Pad_2600x2600_um 1 0 0)
+    )
+    (image IEP:BuckConverterSmall
+      (outline (path signal 120  -22000 -10500  22000 -10500))
+      (outline (path signal 120  22000 -10500  22000 10500))
+      (outline (path signal 120  22000 10500  -22000 10500))
+      (outline (path signal 120  -22000 10500  -22000 -10500))
+      (outline (path signal 120  -11350 500  -11350 10100))
+      (outline (path signal 120  -11350 10100  -1350 10100))
+      (outline (path signal 120  -1350 10100  -1350 500))
+      (outline (path signal 120  -1350 500  -11350 500))
+      (outline (path signal 120  -100 3000  12100 3000))
+      (outline (path signal 120  12100 3000  12100 -9300))
+      (outline (path signal 120  12100 -9300  -100 -9300))
+      (outline (path signal 120  -100 -9300  -100 3000))
+      (outline (path signal 120  -12950 500  -13031.9 -305.194  -13274.2 -1077.42  -13666.9 -1785.07
+            -14194.1 -2399.17  -14834.1 -2894.58  -15560.8 -3251.01  -16344.3 -3453.87
+            -17152.6 -3494.87  -17952.6 -3372.31  -18711.6 -3091.22  -19398.4 -2663.1
+            -19985 -2105.49  -20447.4 -1441.21  -20766.6 -697.452  -20929.5 95.327
+            -20929.5 904.673  -20766.6 1697.45  -20447.4 2441.21  -19985 3105.49
+            -19398.4 3663.1  -18711.6 4091.22  -17952.6 4372.31  -17152.6 4494.87
+            -16344.3 4453.87  -15560.8 4251.01  -14834.1 3894.58  -14194.1 3399.17
+            -13666.9 2785.07  -13274.2 2077.42  -13031.9 1305.19  -12950 500))
+      (outline (path signal 120  20950 500  20868.1 -305.194  20625.8 -1077.42  20233.1 -1785.07
+            19705.9 -2399.17  19065.9 -2894.58  18339.2 -3251.01  17555.7 -3453.87
+            16747.4 -3494.87  15947.4 -3372.31  15188.4 -3091.22  14501.6 -2663.1
+            13915 -2105.49  13452.6 -1441.21  13133.4 -697.452  12970.5 95.327
+            12970.5 904.673  13133.4 1697.45  13452.6 2441.21  13915 3105.49
+            14501.6 3663.1  15188.4 4091.22  15947.4 4372.31  16747.4 4494.87
+            17555.7 4453.87  18339.2 4251.01  19065.9 3894.58  19705.9 3399.17
+            20233.1 2785.07  20625.8 2077.42  20868.1 1305.19  20950 500))
+      (outline (path signal 120  3200 5750  3200 9750))
+      (outline (path signal 120  3200 9750  12500 9750))
+      (outline (path signal 120  12500 9750  12500 5750))
+      (outline (path signal 120  12500 5750  3200 5750))
+      (pin Round[A]Pad_5500_um 5 -15000 8000)
+      (pin Round[A]Pad_5500_um 5@1 15000 -8000)
+      (pin Round[A]Pad_500_um 5@2 -15000 10150)
+      (pin Round[A]Pad_500_um 5@3 -12850 8000)
+      (pin Round[A]Pad_500_um 5@4 -13479.7 9520.28)
+      (pin Round[A]Pad_500_um 5@5 -16520.3 9520.28)
+      (pin Round[A]Pad_500_um 5@6 -17150 8000)
+      (pin Round[A]Pad_500_um 5@7 -16520.3 6479.72)
+      (pin Round[A]Pad_500_um 5@8 -15000 5850)
+      (pin Round[A]Pad_500_um 5@9 -13479.7 6479.72)
+      (pin Round[A]Pad_500_um 5@10 12850 -8000)
+      (pin Round[A]Pad_500_um 5@11 16520.3 -9520.28)
+      (pin Round[A]Pad_500_um 5@12 15000 -10150)
+      (pin Round[A]Pad_500_um 5@13 15000 -5850)
+      (pin Round[A]Pad_500_um 5@14 13479.7 -9520.28)
+      (pin Round[A]Pad_500_um 5@15 17150 -8000)
+      (pin Round[A]Pad_500_um 5@16 13479.7 -6479.72)
+      (pin Round[A]Pad_500_um 5@17 16520.3 -6479.72)
+      (pin Round[A]Pad_1700_um 4 20500 -9250)
+      (pin Round[A]Pad_1700_um 3 20500 9250)
+      (pin Round[A]Pad_1700_um 2 -20500 -9250)
+      (pin Round[A]Pad_1700_um 1 -20500 9250)
+    )
+    (padstack Round[A]Pad_1700_um
+      (shape (circle F.Cu 1700))
+      (shape (circle B.Cu 1700))
+      (attach off)
+    )
+    (padstack Round[A]Pad_2600_um
+      (shape (circle F.Cu 2600))
+      (shape (circle B.Cu 2600))
+      (attach off)
+    )
+    (padstack Round[A]Pad_500_um
+      (shape (circle F.Cu 500))
+      (shape (circle B.Cu 500))
+      (attach off)
+    )
+    (padstack Round[A]Pad_5500_um
+      (shape (circle F.Cu 5500))
+      (shape (circle B.Cu 5500))
+      (attach off)
+    )
+    (padstack Oval[A]Pad_1700x1700_um
+      (shape (path F.Cu 1700  0 0  0 0))
+      (shape (path B.Cu 1700  0 0  0 0))
+      (attach off)
+    )
+    (padstack Rect[A]Pad_2600x2600_um
+      (shape (rect F.Cu -1300 -1300 1300 1300))
+      (shape (rect B.Cu -1300 -1300 1300 1300))
+      (attach off)
+    )
+    (padstack Rect[A]Pad_1700x1700_um
+      (shape (rect F.Cu -850 -850 850 850))
+      (shape (rect B.Cu -850 -850 850 850))
+      (attach off)
+    )
+    (padstack "Via[0-1]_800:400_um"
+      (shape (circle F.Cu 800))
+      (shape (circle B.Cu 800))
+      (attach off)
+    )
+  )
+  (network
+    (net GND
+      (pins J4-5 J4-4 J4-3 J4-2 J4-1 J2-5 J2-4 J2-3 J2-2 J2-1 J1-2 B2-4 B2-2 B1-4
+        B1-2)
+    )
+    (net /Buck3V3/VoltageIn
+      (pins B2-1 B1-1)
+    )
+    (net +5V
+      (pins J3-5 J3-4 J3-3 J3-2 J3-1 B1-3)
+    )
+    (net +3V3
+      (pins J5-5 J5-4 J5-3 J5-2 J5-1 B2-3)
+    )
+    (class kicad_default "" +3V3 +5V /Buck3V3/VoltageIn /Buck3V3/VoltageOut
+      /Buck5V/VoltageOut /Out3V3/VoltageIn /Out5V/VoltageIn GND "Net-(J1-Pad1)"
+      (circuit
+        (use_via Via[0-1]_800:400_um)
+      )
+      (rule
+        (width 250)
+        (clearance 200.1)
+      )
+    )
+  )
+  (wiring
+  )
+)

@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name IEP)(type KiCad)(uri ${KIPRJMOD}/../../library/Footprints.pretty)(options "")(descr ""))
+)

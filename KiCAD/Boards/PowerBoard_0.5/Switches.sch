@@ -262,4 +262,6 @@ Text HLabel 5400 2050 1    50   Input ~ 0
 GND
 Text HLabel 5500 2050 1    50   Input ~ 0
 DC_RAW_+
+Text GLabel 4600 4350 3    50   Input ~ 0
+Bridge_BAT_+
 $EndSCHEMATC

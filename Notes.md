@@ -16,3 +16,30 @@ Drill + Map
         Use alternate drill mode
     Map File Format -> Gerber
     Drill Unit -> mm
+
+# Klipper
+
+## Z-Offset
+
+If z-offset is positive, decrease probe offset
+
+# Test Assembly Notes
+
+## Base
+
+Easier to put drill and stepper motor on *before* extrusions.
+
+## Drill
+
+### Casing
+
+Need to gently pry drill with slothead to get silver casing off, more screws underneath.
+
+### Desoldering
+
+Clip ends of wires just before joint (saves time), **use meat of soldering iron instead of tip**.
+
+### Battery
+
+Make sure to explain how battery clip cover works.
+
